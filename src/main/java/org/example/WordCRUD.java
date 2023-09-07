@@ -24,8 +24,11 @@ public class WordCRUD implements ICRUD{
         System.out.println("새 단어가 단어장에 추가되었습니다.");
     }
     @Override
-    public int update(Object obj) {
-        return 0;
+    public void update() {
+        System.out.println("몇번째 단어를 바꾸시겠습니까?");
+        int order=s.nextInt();
+        Word one=(Word)add();
+        list.set(order-1,one);
     }
 
     @Override

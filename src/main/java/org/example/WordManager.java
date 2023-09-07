@@ -1,7 +1,6 @@
 package org.example;
 
 import java.util.Scanner;
-
 public class WordManager {
     Scanner s=new Scanner(System.in);
     WordCRUD wordCRUD;
@@ -32,6 +31,9 @@ public class WordManager {
             }
             if(menu==4){
                 wordCRUD.addWord();
+            }
+            if(menu==5){
+                wordCRUD.update();
             }
         }
     }
