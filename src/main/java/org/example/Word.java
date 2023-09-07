@@ -11,6 +11,9 @@ public class Word {
                 +String.format("%15s",word)+"  "+meaning;
         return str;
     }
+    public String toFileString(){
+        return this.level+"|"+ this.word+"|"+this.meaning;
+    }
 
     public Word(int id, int level, String word, String meaning) {
         this.id = id;
