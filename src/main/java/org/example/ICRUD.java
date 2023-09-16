@@ -5,5 +5,4 @@ public interface ICRUD {
     public void update();
     public int delete(Object obj);
     public void selectOne(int id);
-
 }
